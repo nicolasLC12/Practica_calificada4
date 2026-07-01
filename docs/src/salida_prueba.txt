@@ -1,0 +1,19 @@
+GRAFO DEL CAMPUS (no dirigido y ponderado)
+Entrada Principal -> Biblioteca(4 min)  Cafeteria(6 min)  Estacionamiento(3 min)  
+Biblioteca -> Entrada Principal(4 min)  Laboratorio IA(5 min)  Aulas(4 min)  
+Cafeteria -> Entrada Principal(6 min)  Aulas(3 min)  Secretaria(5 min)  Estacionamiento(4 min)  
+Estacionamiento -> Entrada Principal(3 min)  Cafeteria(4 min)  Auditorio(9 min)  
+Laboratorio IA -> Biblioteca(5 min)  Aulas(2 min)  Auditorio(6 min)  
+Aulas -> Biblioteca(4 min)  Cafeteria(3 min)  Laboratorio IA(2 min)  Secretaria(4 min)  
+Secretaria -> Cafeteria(5 min)  Aulas(4 min)  Auditorio(3 min)  
+Auditorio -> Laboratorio IA(6 min)  Secretaria(3 min)  Estacionamiento(9 min)  
+
+RECORRIDO DFS desde Entrada Principal:
+Entrada Principal -> Biblioteca -> Laboratorio IA -> Aulas -> Cafeteria -> Secretaria -> Auditorio -> Estacionamiento
+
+RECORRIDO BFS desde Entrada Principal:
+Entrada Principal -> Biblioteca -> Cafeteria -> Estacionamiento -> Laboratorio IA -> Aulas -> Secretaria -> Auditorio
+
+BUSQUEDA A* desde Entrada Principal hasta Laboratorio IA:
+Ruta recomendada: Entrada Principal -> Biblioteca -> Laboratorio IA
+Tiempo total estimado: 9 minutos
